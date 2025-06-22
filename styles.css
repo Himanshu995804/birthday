@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Playwrite+IN:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 60vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+}
+
+.container {
+    height: 100%;
+    width: 80%;
+    /* width: 50%; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: rgb(228, 228, 228);
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/* 320 < width < 375 */
+@media (min-width: 321px) and (max-width: 376px) {
+    .container{
+        width: 256px;
+        height: 364.8px;
+    }
+
+    .note{
+        width: 237.63px;
+        height: 350.75;
+    }
+}
+
+@media (min-width: 377px) and (max-width: 426px) {
+    .container{
+        width: 256px;
+        height: 364.8px;
+    }
+}
+
+@media (min-width: 427px) and (max-width: 769px) {
+    .container{
+        width: 257.49px;
+        height: 364.8px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1025px) {
+    .container{
+        width: 257.27px;
+        height: 364.8;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container{
+        width: 256px;
+        height: 364.8px;
+    }
+}
+
+.note {
+    height:95%;
+    width: 94%;
+
+    /* background-color: rgb(228, 228, 228); */
+
+    background-color: rgb(228, 228, 228);
+
+    background-image: url("brown.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    opacity: 0.8;
+    padding: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#text_Message_Heading {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-weight: bold;
+}
+
+#text_Message {
+    margin-top: 40%;
+    font-family: 'Dancing Script', cursive;
+    font-size: small;
+    font-weight: bold;
+}
